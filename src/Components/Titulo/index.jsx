@@ -7,3 +7,4 @@ padding: 25px 0;
 
 
 export default Titulo;
+
