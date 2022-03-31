@@ -1,0 +1,19 @@
+import React from "react";
+import styled from 'styled-components'
+import Item from '../Item';
+const Itens = styled.div`
+    box-shadown: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 2px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 12px
+`
+
+export default (props)=>{
+    return <Itens>
+        <Item {...props}/>
+        <span>{props.date}</span>
+    </Itens>
+};
